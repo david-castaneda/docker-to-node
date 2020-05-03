@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-const { PORT = 8080, TEST_ENV = "TEST_ENV not set" } = process.ENV;
+const { PORT = 8080, TEST_ENV = "TEST_ENV not set" } = process.env;
 
 app.get("/", (req, res) => res.status(200).send("docker-to-node"));
 
