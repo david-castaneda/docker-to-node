@@ -21,7 +21,7 @@ jobs:
     name: Deploy to Krane
     runs-on: ubuntu-latest
     steps:
-      - uses: krane/cli@v1
+      - uses: actions/krane@v1
         with:
           url: ${{ secrets.KRANE_URL }}
           token: ${{ secrets.KRANE_TOKEN }}
