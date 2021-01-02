@@ -3,6 +3,6 @@
   "image": "davidcasta/docker-to-node",
   "alias": ["docker-to-node.biensupernice.com", "example.biensupernice.com"],
   "env": {
-    "TEST_ENV": "Hello from the Krane Action"
+    "TEST_ENV": "Hello from the Krane GitHub Action"
   }
 }
