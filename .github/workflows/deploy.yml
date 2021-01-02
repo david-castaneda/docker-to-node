@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: david-castaneda/docker-to-node
-      - uses: krane/action@v1
+      - uses: krane/action@v1.1
         with:
           url: ${{ secrets.KRANE_URL }}
           token: ${{ secrets.KRANE_TOKEN }}
