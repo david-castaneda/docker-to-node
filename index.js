@@ -14,4 +14,4 @@ app.get("/health", (req, res) =>
   res.status(200).json({ status: 200, message: "healthy" })
 );
 
-app.listen(PORT, () => console.log(`> Listening :${PORT}`));
+app.listen(PORT, () => console.log(`Listening :${PORT}`));
