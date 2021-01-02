@@ -1,0 +1,28 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish-to-docker:
+    name: Publish Docker image
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: docker/build-push-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: davidcasta/docker-to-node
+          tags: latest
+  deploy-to-krane:
+    name: Deploy to Krane
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/krane@v1
+        with:
+          url: ${{ secrets.KRANE_URL }}
+          token: ${{ secrets.KRANE_TOKEN }}
+          file: ./deployment.json
