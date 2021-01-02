@@ -1,7 +1,7 @@
 {
   "name": "docker-to-node",
   "image": "davidcasta/docker-to-node",
-  "alias": ["docker-to-node.biensupernice.com", "example.biensupernice.com"],
+  "alias": ["docker-to-node.biensupernice.com"],
   "env": {
     "TEST_ENV": "Hello from the Krane GitHub Action"
   }
