@@ -27,4 +27,4 @@ jobs:
         with:
           url: ${{ secrets.KRANE_URL }}
           token: ${{ secrets.KRANE_TOKEN }}
-          file: ./deployment.json
+          file: ./something/deployment.json
