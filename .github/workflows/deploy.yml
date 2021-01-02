@@ -26,5 +26,5 @@ jobs:
       - uses: krane/action@master
         with:
           url: ${{ secrets.KRANE_URL }}
-          token: x
+          token: ${{ secrets.KRANE_TOKEN }}
           file: ./deployment.json
