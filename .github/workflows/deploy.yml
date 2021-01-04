@@ -36,3 +36,4 @@ jobs:
           endpoint: ${{ secrets.KRANE_ENDPOINT}}
           token: ${{ secrets.KRANE_TOKEN }}
           file: ./deployment.json
+          tag: 0.0.5
