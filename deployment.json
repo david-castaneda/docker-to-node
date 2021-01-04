@@ -4,6 +4,6 @@
   "alias": ["docker-to-node.biensupernice.com"],
   "secure": true,
   "env": {
-    "TEST_ENV": "Hello Juan Pipi!"
+    "TEST_ENV": "Hello World!"
   }
 }
