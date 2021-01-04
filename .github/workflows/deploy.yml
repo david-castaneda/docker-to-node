@@ -25,6 +25,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: krane/action@master
         with:
-          url: ${{ secrets.KRANE_URL }}
+          endpoint: ${{ secrets.KRANE_ENDPOINT}}
           token: ${{ secrets.KRANE_TOKEN }}
           file: ./deployment.json
