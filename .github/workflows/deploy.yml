@@ -27,6 +27,9 @@ jobs:
 
   deploy-to-krane:
     name: Deploy to Krane
+    environment:
+      name: krane_deployment
+      url: https://docker-to-node.biensupernice.com
     needs: [build-and-publish-to-docker]
     runs-on: ubuntu-latest
     steps:
