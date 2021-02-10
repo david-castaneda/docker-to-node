@@ -1,7 +1,5 @@
 [![Deploy](https://github.com/david-castaneda/docker-to-node/workflows/deploy/badge.svg)](https://krane.sh)
 
-Example dockerized app
-
 ## Build
 
 ```bash
